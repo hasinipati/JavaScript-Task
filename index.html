@@ -1,60 +1,364 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JavaScript Practice | Hasini</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice | Hasini</title>
+
+```
 <style>
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#1f2937;line-height:1.6}header{background:linear-gradient(135deg,#111827,#374151);color:white;padding:60px 20px;text-align:center}header h1{font-size:42px;margin-bottom:12px}header p{max-width:720px;margin:auto;color:#d1d5db;font-size:17px}.container{width:min(1100px,92%);margin:40px auto}.section-title{margin:42px 0 18px;font-size:28px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.card{display:block;text-decoration:none;color:inherit;background:white;padding:22px;border-radius:14px;border:1px solid #e5e7eb;box-shadow:0 4px 14px rgba(0,0,0,.05);transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.1)}.card h3{margin:12px 0 8px;font-size:19px}.card p{color:#6b7280;font-size:14px;min-height:48px}.tag{display:inline-block;font-size:11px;font-weight:bold;letter-spacing:.7px;padding:5px 9px;border-radius:999px;background:#eef2ff;color:#4338ca}.demo .tag{background:#ecfdf5;color:#047857}.link{display:inline-block;margin-top:15px;font-weight:bold;font-size:14px;color:#2563eb}.note{background:white;border-left:4px solid #2563eb;padding:18px 20px;margin:30px 0;border-radius:8px;color:#4b5563}footer{text-align:center;padding:30px 20px;color:#6b7280;font-size:14px}@media(max-width:600px){header h1{font-size:32px}}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 30px;
+    }
+
+    main {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    h2 {
+        color: #333;
+        margin-top: 30px;
+    }
+
+    .card {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .card h3 {
+        color: #333;
+    }
+
+    .card p {
+        color: #666;
+    }
+
+    a {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .note {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 15px;
+    }
+
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 30px;
+    }
 </style>
+```
+
 </head>
+
 <body>
-<header><h1>JavaScript Practice</h1><p>A collection of JavaScript exercises covering functions, conditions, logic, loops, and interactive HTML-based programs.</p></header>
-<main class="container">
-<div class="note"><strong>Welcome!</strong> Select an exercise below to view the JavaScript source code or open an interactive exercise.</div>
-<h2 class="section-title">Interactive Exercises</h2>
-<div class="grid">
-<a class="card demo" href="if.html"><span class="tag">LIVE DEMO</span><h3>If Condition</h3><p>Positive/negative, comparison, divisibility, odd/even and bill exercises.</p><span class="link">Open exercise →</span></a>
-<a class="card demo" href="if-else.html"><span class="tag">LIVE DEMO</span><h3>If-Else</h3><p>Vowel, uppercase/lowercase, range, alphabet, digit and login exercises.</p><span class="link">Open exercise →</span></a>
-<a class="card demo" href="logics.html"><span class="tag">LIVE DEMO</span><h3>Logic Exercises</h3><p>Interactive arithmetic and logic exercises.</p><span class="link">Open exercise →</span></a>
-<a class="card demo" href="loop.html"><span class="tag">LIVE DEMO</span><h3>Loop Exercises</h3><p>Natural numbers, multiplication table, factorial and Fibonacci exercises.</p><span class="link">Open exercise →</span></a>
-<a class="card demo" href="pattern_task2.html"><span class="tag">LIVE DEMO</span><h3>Pattern Task 2</h3><p>Nested-loop number pattern exercises.</p><span class="link">Open exercise →</span></a>
-<a class="card demo" href="patterns_task.html"><span class="tag">LIVE DEMO</span><h3>Pattern Tasks</h3><p>Number and star pattern exercises using nested loops.</p><span class="link">Open exercise →</span></a>
-<a class="card demo" href="pyramid.html"><span class="tag">LIVE DEMO</span><h3>Pyramid Patterns</h3><p>Multiple pyramid and number-pattern exercises.</p><span class="link">Open exercise →</span></a>
-<a class="card demo" href="single_line_pattern.html"><span class="tag">LIVE DEMO</span><h3>Single Line Patterns</h3><p>Star and number pattern practice.</p><span class="link">Open exercise →</span></a>
-</div>
-<h2 class="section-title">OOPS / Function Practice</h2>
-<div class="grid">
-<a class="card" href="task1.js"><span class="tag">OOPS</span><h3>Task1 </h3><p></p><span class="link">View source →</span></a>
-<a class="card" href="task2.js"><span class="tag">OOPS</span><h3>Task2</h3><p></p><span class="link">View source →</span></a>
-</div>
-<h2 class="section-title">JavaScript Practice Files</h2>
-<div class="grid">
-<a class="card" href="function_type1.js"><span class="tag">JS</span><h3>Named Functions – Without Input &amp; Without Return</h3><p>Named functions without input and return values.</p><span class="link">View source →</span></a>
-<a class="card" href="function_type2.js"><span class="tag">JS</span><h3>Named Functions – With Input &amp; Without Return</h3><p>Named functions with input arguments and no return value.</p><span class="link">View source →</span></a>
-<a class="card" href="function_type3.js"><span class="tag">JS</span><h3>Named Functions – Without Input &amp; With Return</h3><p>Named functions that return values without input.</p><span class="link">View source →</span></a>
-<a class="card" href="function_type4.js"><span class="tag">JS</span><h3>Named Functions – With Input &amp; With Return</h3><p>Named functions with input arguments and return values.</p><span class="link">View source →</span></a>
-<a class="card" href="if.js"><span class="tag">JS</span><h3>If Condition JavaScript</h3><p>JavaScript functions used by the interactive if page.</p><span class="link">View source →</span></a>
-<a class="card" href="if-else.js"><span class="tag">JS</span><h3>If-Else JavaScript</h3><p>JavaScript functions used by the interactive if-else page.</p><span class="link">View source →</span></a>
-<a class="card" href="if_else_if.js"><span class="tag">JS</span><h3>If-Else-If</h3><p>Multiple-condition if and else-if practice.</p><span class="link">View source →</span></a>
-<a class="card" href="ifcond.js"><span class="tag">JS</span><h3>If Conditions Practice</h3><p>Basic condition and comparison practice.</p><span class="link">View source →</span></a>
-<a class="card" href="logics.js"><span class="tag">JS</span><h3>Logics</h3><p>Interactive logic and arithmetic JavaScript.</p><span class="link">View source →</span></a>
-<a class="card" href="logicspractice.js"><span class="tag">JS</span><h3>Logic Practice</h3><p>Additional JavaScript logic exercises.</p><span class="link">View source →</span></a>
-<a class="card" href="jumpingState.js"><span class="tag">JS</span><h3>Jumping Statements</h3><p>Practice using break and continue statements.</p><span class="link">View source →</span></a>
-<a class="card" href="loop.js"><span class="tag">JS</span><h3>Loops</h3><p>JavaScript functions for natural numbers, tables, factorial and Fibonacci.</p><span class="link">View source →</span></a>
-<a class="card" href="loop_task.js"><span class="tag">JS</span><h3>Loop Tasks</h3><p>Range, divisibility, averages, powers, Fibonacci and series exercises.</p><span class="link">View source →</span></a>
-<a class="card" href="while.js"><span class="tag">JS</span><h3>While Loop</h3><p>Digit extraction, sums, reverse, palindrome and digit-analysis exercises.</p><span class="link">View source →</span></a>
-<a class="card" href="nested_loops.js"><span class="tag">JS</span><h3>Nested Loops</h3><p>Nested-loop practice including factorial, prime and palindrome logic.</p><span class="link">View source →</span></a>
-<a class="card" href="nested-loops.js"><span class="tag">JS</span><h3>Nested Loops – 2</h3><p>Additional nested-loop number and multiplication-table exercises.</p><span class="link">View source →</span></a>
-<a class="card" href="nested_objects.js"><span class="tag">JS</span><h3>Nested Objects</h3><p>Accessing, updating, adding and deleting nested object properties.</p><span class="link">View source →</span></a>
-<a class="card" href="nested-object.js"><span class="tag">JS</span><h3>Nested Object</h3><p>Nested object data access and manipulation practice.</p><span class="link">View source →</span></a>
-<a class="card" href="obj-with-func.js"><span class="tag">JS</span><h3>Objects with Functions</h3><p>Named, anonymous and arrow functions used with objects.</p><span class="link">View source →</span></a>
-<a class="card" href="patterns.js"><span class="tag">JS</span><h3>Patterns</h3><p>Star, number and shape pattern practice using loops.</p><span class="link">View source →</span></a>
-<a class="card" href="switch_case.js"><span class="tag">JS</span><h3>Switch Case</h3><p>Switch statements, fall-through, days, colors and calculator operations.</p><span class="link">View source →</span></a>
-<a class="card" href="pattern_task2.html"><span class="tag">HTML</span><h3>Pattern Task 2</h3><p>Nested-loop pattern programs rendered in the browser.</p><span class="link">Open file →</span></a>
-<a class="card" href="patterns_task.html"><span class="tag">HTML</span><h3>Patterns Task</h3><p>Collection of browser-based number and star patterns.</p><span class="link">Open file →</span></a>
-<a class="card" href="pyramid.html"><span class="tag">HTML</span><h3>Pyramid</h3><p>Number pyramid and inverted pyramid pattern exercises.</p><span class="link">Open file →</span></a>
-<a class="card" href="single_line_pattern.html"><span class="tag">HTML</span><h3>Single Line Pattern</h3><p>Simple browser-based pattern practice.</p><span class="link">Open file →</span></a>
-</div></main>
-<footer>JavaScript Practice Portfolio</footer>
-</body></html>
+
+```
+<header>
+    <h1>JavaScript Practice</h1>
+
+    <p>
+        A collection of JavaScript exercises covering functions,
+        conditions, logic, loops, and HTML-based programs.
+    </p>
+</header>
+
+<main>
+
+    <div class="note">
+        <strong>Welcome!</strong>
+        <p>
+            Select an exercise below to view the JavaScript source
+            code or open an interactive exercise.
+        </p>
+    </div>
+
+    <h2>Interactive Exercises</h2>
+
+    <div class="card">
+        <h3>If Condition</h3>
+        <p>
+            Positive/negative, comparison, divisibility,
+            odd/even and bill exercises.
+        </p>
+        <a href="if.html">Open exercise</a>
+    </div>
+
+    <div class="card">
+        <h3>If-Else</h3>
+        <p>
+            Vowel, uppercase/lowercase, range, alphabet,
+            digit and login exercises.
+        </p>
+        <a href="if-else.html">Open exercise</a>
+    </div>
+
+    <div class="card">
+        <h3>Logic Exercises</h3>
+        <p>Interactive arithmetic and logic exercises.</p>
+        <a href="logics.html">Open exercise</a>
+    </div>
+
+    <div class="card">
+        <h3>Loop Exercises</h3>
+        <p>
+            Natural numbers, multiplication table,
+            factorial and Fibonacci exercises.
+        </p>
+        <a href="loop.html">Open exercise</a>
+    </div>
+
+    <div class="card">
+        <h3>Pattern Task 2</h3>
+        <p>Nested-loop number pattern exercises.</p>
+        <a href="pattern_task2.html">Open exercise</a>
+    </div>
+
+    <div class="card">
+        <h3>Pattern Tasks</h3>
+        <p>
+            Number and star pattern exercises using nested loops.
+        </p>
+        <a href="patterns_task.html">Open exercise</a>
+    </div>
+
+    <div class="card">
+        <h3>Pyramid Patterns</h3>
+        <p>Multiple pyramid and number-pattern exercises.</p>
+        <a href="pyramid.html">Open exercise</a>
+    </div>
+
+    <div class="card">
+        <h3>Single Line Patterns</h3>
+        <p>Star and number pattern practice.</p>
+        <a href="single_line_pattern.html">Open exercise</a>
+    </div>
+
+
+    <h2>OOPS / Function Practice</h2>
+
+    <div class="card">
+        <h3>Task 1</h3>
+        <a href="task1.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Task 2</h3>
+        <a href="task2.js">View source</a>
+    </div>
+
+
+    <h2>JavaScript Practice Files</h2>
+
+    <div class="card">
+        <h3>Named Functions – Without Input & Without Return</h3>
+        <p>Named functions without input and return values.</p>
+        <a href="function_type1.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Named Functions – With Input & Without Return</h3>
+        <p>Named functions with input arguments and no return value.</p>
+        <a href="function_type2.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Named Functions – Without Input & With Return</h3>
+        <p>Named functions that return values without input.</p>
+        <a href="function_type3.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Named Functions – With Input & With Return</h3>
+        <p>Named functions with input arguments and return values.</p>
+        <a href="function_type4.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>If Condition JavaScript</h3>
+        <p>JavaScript functions used by the interactive if page.</p>
+        <a href="if.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>If-Else JavaScript</h3>
+        <p>JavaScript functions used by the interactive if-else page.</p>
+        <a href="if-else.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>If-Else-If</h3>
+        <p>Multiple-condition if and else-if practice.</p>
+        <a href="if_else_if.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>If Conditions Practice</h3>
+        <p>Basic condition and comparison practice.</p>
+        <a href="ifcond.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Logics</h3>
+        <p>Interactive logic and arithmetic JavaScript.</p>
+        <a href="logics.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Logic Practice</h3>
+        <p>Additional JavaScript logic exercises.</p>
+        <a href="logicspractice.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Jumping Statements</h3>
+        <p>Practice using break and continue statements.</p>
+        <a href="jumpingState.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Loops</h3>
+        <p>
+            JavaScript functions for natural numbers,
+            tables, factorial and Fibonacci.
+        </p>
+        <a href="loop.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Loop Tasks</h3>
+        <p>
+            Range, divisibility, averages, powers,
+            Fibonacci and series exercises.
+        </p>
+        <a href="loop_task.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>While Loop</h3>
+        <p>
+            Digit extraction, sums, reverse,
+            palindrome and digit-analysis exercises.
+        </p>
+        <a href="while.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Nested Loops</h3>
+        <p>
+            Nested-loop practice including factorial,
+            prime and palindrome logic.
+        </p>
+        <a href="nested_loops.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Nested Loops – 2</h3>
+        <p>
+            Additional nested-loop number and
+            multiplication-table exercises.
+        </p>
+        <a href="nested-loops.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Nested Objects</h3>
+        <p>
+            Accessing, updating, adding and deleting
+            nested object properties.
+        </p>
+        <a href="nested_objects.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Nested Object</h3>
+        <p>Nested object data access and manipulation practice.</p>
+        <a href="nested-object.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Objects with Functions</h3>
+        <p>
+            Named, anonymous and arrow functions used with objects.
+        </p>
+        <a href="obj-with-func.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Patterns</h3>
+        <p>Star, number and shape pattern practice using loops.</p>
+        <a href="patterns.js">View source</a>
+    </div>
+
+    <div class="card">
+        <h3>Switch Case</h3>
+        <p>
+            Switch statements, fall-through, days,
+            colors and calculator operations.
+        </p>
+        <a href="switch_case.js">View source</a>
+    </div>
+
+
+    <h2>HTML Practice Files</h2>
+
+    <div class="card">
+        <h3>Pattern Task 2</h3>
+        <p>Nested-loop pattern programs rendered in the browser.</p>
+        <a href="pattern_task2.html">Open file</a>
+    </div>
+
+    <div class="card">
+        <h3>Patterns Task</h3>
+        <p>
+            Collection of browser-based number and star patterns.
+        </p>
+        <a href="patterns_task.html">Open file</a>
+    </div>
+
+    <div class="card">
+        <h3>Pyramid</h3>
+        <p>
+            Number pyramid and inverted pyramid pattern exercises.
+        </p>
+        <a href="pyramid.html">Open file</a>
+    </div>
+
+    <div class="card">
+        <h3>Single Line Pattern</h3>
+        <p>Simple browser-based pattern practice.</p>
+        <a href="single_line_pattern.html">Open file</a>
+    </div>
+
+</main>
+
+<footer>
+    <p>JavaScript Practice Portfolio</p>
+</footer>
+```
+
+</body>
+</html>
